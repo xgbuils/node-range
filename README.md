@@ -1,11 +1,11 @@
-range - A simple library for range(a, b, step).
+# range - A simple library for range(a, b, step).
 
-REQUIREMENTS
+## REQUIREMENTS
 
- - Node.js
+ - [Node.js](http://nodejs.org/)
  - [cmp](http://search.npmjs.org/#/cmp)
 
-EXAMPLE
+## EXAMPLE
 
 	$ node fizzbuzz.js
 	Server running at http://127.0.0.1:8124/
