@@ -6,13 +6,15 @@ http = require("http");
 
 function fizzbuzz() {
   return range(1, 101).map(function(n) {
-    if (n % 3 === 0 && n % 5 === 0) {
+    var a = n % 3, b = n % 5;
+
+    if (a === 0 && b === 0) {
       return "FizzBuzz";
     }
-    else if (n % 3 === 0) {
+    else if (a === 0) {
       return "Fizz";
     }
-    else if (n % 5 === 0) {
+    else if (b === 0) {
       return "Buzz";
     }
     else {
