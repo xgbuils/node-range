@@ -18,6 +18,6 @@
     "node": "*"
   },
   "dependencies": {
-	"cmp":"0.0.2"
+    "cmp":"0.0.2"
   }
 }
