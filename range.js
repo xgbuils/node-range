@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+exports = module.exports = range;
+
 var cmp = require("cmp");
 
 // Returns an array of integers starting at a, incrementing by step, ending before b.
