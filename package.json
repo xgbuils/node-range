@@ -12,7 +12,7 @@
     "lib": "."
   },
   "scripts": {
-    "test": "test()"
+    "test": "node test.js"
   },
   "engines": {
     "node": "*"
