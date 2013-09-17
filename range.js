@@ -1,8 +1,4 @@
-#!/usr/bin/env node
-
 exports = module.exports = range;
-
-var cmp = require("cmp");
 
 // Returns an array of integers starting at a, incrementing by step, ending before b.
 //
@@ -27,9 +23,3 @@ function range(a, b, step) {
 }
 
 exports.range = range;
-
-function test() {
-  return cmp.eq(range(0, 10), [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]) && cmp.eq(range(0, 10, 2), [0, 2, 4, 6, 8]);
-}
-
-exports.test = test;
