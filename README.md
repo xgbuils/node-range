@@ -3,7 +3,6 @@
 # REQUIREMENTS
 
  - [Node.js](http://nodejs.org/)
- - [cmp](http://search.npmjs.org/#/cmp)
 
 # DEVELOPMENT
 
