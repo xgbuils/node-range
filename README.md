@@ -68,3 +68,9 @@ Guard can automatically run testing when the code changes:
 Keep the code tidy:
 
     $ npm run-script lint
+
+Guard can automatically lint when the code changes:
+
+    $ bundle
+    $ guard -G Guardfile-lint
+    ...
