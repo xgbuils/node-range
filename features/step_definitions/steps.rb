@@ -10,7 +10,7 @@ Then(/^the output is correct for each test$/) do
   lines[0].should == 'node fizzbuzz.js &'
   lines[1].should == 'sleep 2'
   lines[2].should == 'Server running at http://127.0.0.1:8124/'
-  lines[3].should == 'curl http://localhost:8124'
+  lines[3].should == 'curl http://localhost:8124 2>/dev/null'
   lines[4].should == '1'
   lines[5].should == '2'
   lines[6].should == 'Fizz'

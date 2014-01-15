@@ -7,7 +7,7 @@
     node fizzbuzz.js &
     sleep 2
     Server running at http://127.0.0.1:8124/
-    curl http://localhost:8124
+    curl http://localhost:8124 2>/dev/null
     1
     2
     Fizz
@@ -46,9 +46,6 @@ Ensure the example script works as expected:
     Feature: Run example tests
 
       Scenario: Running example tests            # features/run_example_tests.feature:3
-      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                     Dload  Upload   Total   Spent    Left  Speed
-    100   413    0   413    0     0  60459      0 --:--:-- --:--:-- --:--:-- 68833
         Given the program has finished           # features/step_definitions/steps.rb:1
         Then the output is correct for each test # features/step_definitions/steps.rb:5
 
