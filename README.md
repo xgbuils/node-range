@@ -1,24 +1,13 @@
 # range - A simple library for range(a, b, step).
 
-# REQUIREMENTS
-
- - [Node.js](http://nodejs.org/)
-
-# DEVELOPMENT
-
-## Linting
-
-Keep the code tidy:
-
-    $ npm run-script lint
-
 # EXAMPLE
 
-    $ git clone https://github.com/mcandre/node-range.git
-    $ cd node-range
-    $ node fizzbuzz.js
+    $ npm install
+    $ make test
+    node fizzbuzz.js &
+    sleep 2
     Server running at http://127.0.0.1:8124/
-
+    curl http://localhost:8124
     1
     2
     Fizz
@@ -35,3 +24,18 @@ Keep the code tidy:
     14
     FizzBuzz
     ...
+    lsof -i tcp:8124 | awk 'NR!=1 {print $2}' | xargs kill
+
+# REQUIREMENTS
+
+* [Node.js](http://nodejs.org/)
+
+# INSTALL
+
+    $ npm install range
+
+# LINT
+
+Keep the code tidy:
+
+    $ npm run-script lint
