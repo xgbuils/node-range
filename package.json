@@ -18,6 +18,7 @@
     "node": "*"
   },
   "scripts": {
+    "test": "make test",
     "lint": "jshint ."
   },
   "devDependencies": {

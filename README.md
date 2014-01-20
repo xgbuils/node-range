@@ -3,7 +3,11 @@
 # EXAMPLE
 
     $ npm install
-    $ make test
+    $ npm test
+
+    > range@0.0.2 test /Users/andrew/Desktop/src/node-range
+    > make test
+
     node fizzbuzz.js &
     sleep 2
     Server running at http://127.0.0.1:8124/
