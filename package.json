@@ -18,10 +18,13 @@
     "node": "*"
   },
   "scripts": {
-    "test": "make test",
+    "test": "grunt",
     "lint": "jshint ."
   },
   "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-cli": "~0.1.13",
+    "grunt-exec": "~0.4.5",
     "cmp":"0.0.2",
     "jshint": ">=2.1.2"
   }

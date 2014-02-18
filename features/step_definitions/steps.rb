@@ -1,30 +1,39 @@
 Given(/^the program has finished$/) do
-  @cucumber = `npm test`
+  @cucumber = `grunt --no-color`
 end
 
 Then(/^the output is correct for each test$/) do
   lines = @cucumber.split("\n")
 
-  lines.length.should == 109
+  lines.length.should == 110
 
-  lines[-105].should == 'node fizzbuzz.js &'
-  lines[-104].should == 'sleep 2'
-  lines[-103].should == 'Server running at http://127.0.0.1:8124/'
-  lines[-102].should == 'curl http://localhost:8124 2>/dev/null'
-  lines[-101].should == '1'
-  lines[-100].should == '2'
-  lines[-99].should == 'Fizz'
-  lines[-98].should == '4'
-  lines[-97].should == 'Buzz'
-  lines[-96].should == 'Fizz'
-  lines[-95].should == '7'
-  lines[-94].should == '8'
-  lines[-93].should == 'Fizz'
-  lines[-92].should == 'Buzz'
-  lines[-91].should == '11'
-  lines[-90].should == 'Fizz'
-  lines[-89].should == '13'
-  lines[-88].should == '14'
-  lines[-87].should == 'FizzBuzz'
-  lines[-1].should == 'lsof -i tcp:8124 | awk \'NR!=1 {print $2}\' | xargs kill'
+  lines[0].should == 'Running "exec:backgroundServer" (exec) task'
+  lines[1].should == ''
+  lines[2].should == 'Running "exec:waitForServer" (exec) task'
+  lines[3].should == 'Server running at http://127.0.0.1:8124/'
+  lines[4].should == ''
+  lines[5].should == 'Running "exec:loadPage" (exec) task'
+  lines[6].should == '1'
+  lines[7].should == '2'
+  lines[8].should == 'Fizz'
+  lines[9].should == '4'
+  lines[10].should == 'Buzz'
+  lines[11].should == 'Fizz'
+  lines[12].should == '7'
+  lines[13].should == '8'
+  lines[14].should == 'Fizz'
+  lines[15].should == 'Buzz'
+  lines[16].should == '11'
+  lines[17].should == 'Fizz'
+  lines[18].should == '13'
+  lines[19].should == '14'
+  lines[20].should == 'FizzBuzz'
+
+  lines[-7].should == '98'
+  lines[-6].should == 'Fizz'
+  lines[-5].should == 'Buzz'
+  lines[-4].should == ''
+  lines[-3].should == 'Running "exec:killServer" (exec) task'
+  lines[-2].should == ''
+  lines[-1].should == 'Done, without errors.'
 end

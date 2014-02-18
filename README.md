@@ -4,14 +4,16 @@
 
     $ npm install
     $ npm test
-
-    > range@0.0.2 test /Users/andrew/Desktop/src/node-range
-    > make test
-
-    node fizzbuzz.js &
-    sleep 2
+    
+    > range@0.0.2 test /Users/apennebaker/Desktop/src/node-range
+    > grunt
+    
+    Running "exec:backgroundServer" (exec) task
+    
+    Running "exec:waitForServer" (exec) task
     Server running at http://127.0.0.1:8124/
-    curl http://localhost:8124 2>/dev/null
+    
+    Running "exec:loadPage" (exec) task
     1
     2
     Fizz
@@ -28,7 +30,13 @@
     14
     FizzBuzz
     ...
-    lsof -i tcp:8124 | awk 'NR!=1 {print $2}' | xargs kill
+    98
+    Fizz
+    Buzz
+    
+    Running "exec:killServer" (exec) task
+    
+    Done, without errors.
 
 # REQUIREMENTS
 
