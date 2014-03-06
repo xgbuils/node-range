@@ -1,5 +1,9 @@
 # range - A simple library for range(a, b, step).
 
+# INSTALL
+
+    $ npm install range
+
 # EXAMPLE
 
     $ npm install
@@ -48,8 +52,11 @@
 * [Bundler](http://bundler.io/)
 * [Cucumber](http://cukes.info/)
 * [Guard](http://guardgem.org/)
+* [aspelllint](https://github.com/mcandre/aspelllint)
 
-# TESTING
+# DEVELOPMENT
+
+## Test
 
 Ensure the example script works as expected:
 
@@ -65,21 +72,24 @@ Ensure the example script works as expected:
     2 steps (2 passed)
     0m2.049s
 
+## Lint
+
+Keep the code tidy:
+
+    $ npm run-script lint
+
+## Spell Check
+
+    $ aspelllint
+    ...
+
+## Local CI
+
 Guard can automatically run testing when the code changes:
 
     $ bundle
     $ guard -G Guardfile-cucumber
     ...
-
-# INSTALL
-
-    $ npm install range
-
-# LINT
-
-Keep the code tidy:
-
-    $ npm run-script lint
 
 Guard can automatically lint when the code changes:
 
