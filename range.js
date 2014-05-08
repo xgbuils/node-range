@@ -15,8 +15,14 @@ function range(a, b, step) {
 
   var r = [];
 
-  for (var x = a; x !== b; x += step) {
-    r.push(x);
+  if (step > 0) {
+    for (var x = a; x < b; x += step) {
+      r.push(x);
+    }
+  } else {
+    for (var x = a; x > b; x += step) {
+      r.push(x);
+    }
   }
 
   return r;
