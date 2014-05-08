@@ -42,6 +42,10 @@
     
     Done, without errors.
 
+# LICENSE
+
+FreeBSD
+
 # REQUIREMENTS
 
 * [Node.js](http://nodejs.org/)
