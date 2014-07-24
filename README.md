@@ -100,3 +100,7 @@ Guard can automatically lint when the code changes:
     $ bundle
     $ guard -G Guardfile-lint
     ...
+
+## Git Hooks
+
+See `hooks/`.
