@@ -5,35 +5,35 @@ end
 Then(/^the output is correct for each test$/) do
   lines = @cucumber.split("\n")
 
-  lines.length.should == 110
+  expect(lines.length).to eq(110)
 
-  lines[0].should == 'Running "exec:backgroundServer" (exec) task'
-  lines[1].should == ''
-  lines[2].should == 'Running "exec:waitForServer" (exec) task'
-  lines[3].should == 'Server running at http://127.0.0.1:8124/'
-  lines[4].should == ''
-  lines[5].should == 'Running "exec:loadPage" (exec) task'
-  lines[6].should == '1'
-  lines[7].should == '2'
-  lines[8].should == 'Fizz'
-  lines[9].should == '4'
-  lines[10].should == 'Buzz'
-  lines[11].should == 'Fizz'
-  lines[12].should == '7'
-  lines[13].should == '8'
-  lines[14].should == 'Fizz'
-  lines[15].should == 'Buzz'
-  lines[16].should == '11'
-  lines[17].should == 'Fizz'
-  lines[18].should == '13'
-  lines[19].should == '14'
-  lines[20].should == 'FizzBuzz'
+  expect(lines[0]).to eq('Running "exec:backgroundServer" (exec) task')
+  expect(lines[1]).to eq('')
+  expect(lines[2]).to eq('Running "exec:waitForServer" (exec) task')
+  expect(lines[3]).to eq('Server running at http://127.0.0.1:8124/')
+  expect(lines[4]).to eq('')
+  expect(lines[5]).to eq('Running "exec:loadPage" (exec) task')
+  expect(lines[6]).to eq('1')
+  expect(lines[7]).to eq('2')
+  expect(lines[8]).to eq('Fizz')
+  expect(lines[9]).to eq('4')
+  expect(lines[10]).to eq('Buzz')
+  expect(lines[11]).to eq('Fizz')
+  expect(lines[12]).to eq('7')
+  expect(lines[13]).to eq('8')
+  expect(lines[14]).to eq('Fizz')
+  expect(lines[15]).to eq('Buzz')
+  expect(lines[16]).to eq('11')
+  expect(lines[17]).to eq('Fizz')
+  expect(lines[18]).to eq('13')
+  expect(lines[19]).to eq('14')
+  expect(lines[20]).to eq('FizzBuzz')
 
-  lines[-7].should == '98'
-  lines[-6].should == 'Fizz'
-  lines[-5].should == 'Buzz'
-  lines[-4].should == ''
-  lines[-3].should == 'Running "exec:killServer" (exec) task'
-  lines[-2].should == ''
-  lines[-1].should == 'Done, without errors.'
+  expect(lines[-7]).to eq('98')
+  expect(lines[-6]).to eq('Fizz')
+  expect(lines[-5]).to eq('Buzz')
+  expect(lines[-4]).to eq('')
+  expect(lines[-3]).to eq('Running "exec:killServer" (exec) task')
+  expect(lines[-2]).to eq('')
+  expect(lines[-1]).to eq('Done, without errors.')
 end
