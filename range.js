@@ -13,14 +13,14 @@ function range(a, b, step) {
     step = 1;
   }
 
-  var r = [];
+  var x, r = [];
 
   if (step > 0) {
-    for (var x = a; x < b; x += step) {
+    for (x = a; x < b; x += step) {
       r.push(x);
     }
   } else {
-    for (var x = a; x > b; x += step) {
+    for (x = a; x > b; x += step) {
       r.push(x);
     }
   }
