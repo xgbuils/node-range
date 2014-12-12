@@ -7,16 +7,13 @@
     "url": "git://github.com/mcandre/node-range.git"
   },
   "author": "Andrew Pennebaker <andrew.pennebaker@gmail.com> (http://www.yellosoft.us/)",
-  "main": "range",
-  "directories": {
-    "lib": "."
-  },
   "scripts": {
     "test": "node test.js"
   },
   "engines": {
     "node": ">=0.8"
   },
+  "main": "lib/range.js",
   "scripts": {
     "test": "grunt",
     "lint": "jshint ."

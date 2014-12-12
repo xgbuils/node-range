@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 var
-range = require("./range").range,
-http = require("http");
+http = require("http"),
+range = require("./lib/range").range;
 
 function fizzbuzz() {
   return range(1, 101).map(function(n) {
