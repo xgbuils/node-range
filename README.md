@@ -1,11 +1,5 @@
 # range - A simple library for range(a, b, step).
 
-# INSTALL
-
-```
-$ npm install range
-```
-
 # EXAMPLE
 
 ```
@@ -43,6 +37,20 @@ Buzz
 Running "exec:killServer" (exec) task
 
 Done, without errors.
+```
+
+# HOMEPAGE
+
+https://github.com/mcandre/node-range
+
+# NPM
+
+https://www.npmjs.com/package/range
+
+# INSTALL
+
+```
+$ npm install range
 ```
 
 # LICENSE
