@@ -1,42 +1,44 @@
 # range - A simple library for range(a, b, step).
 
+range.js is a Node library approximation of Python's `range()` function.
+
 # EXAMPLE
 
 ```
-$ npm test
-
-> range@0.0.2 test /Users/andrew/Desktop/src/node-range
-> grunt
-
-Running "exec:backgroundServer" (exec) task
-
-Running "exec:waitForServer" (exec) task
-Server running at http://127.0.0.1:8124/
-
-Running "exec:loadPage" (exec) task
-1
-2
-Fizz
-4
-Buzz
-Fizz
-7
-8
-Fizz
-Buzz
-11
-Fizz
-13
-14
-FizzBuzz
-...
-98
-Fizz
-Buzz
-
-Running "exec:killServer" (exec) task
-
-Done, without errors.
+$ node
+> var range = require("range");
+> range.range(0, 20);
+[ 0,
+  1,
+  2,
+  3,
+  4,
+  5,
+  6,
+  7,
+  8,
+  9,
+  10,
+  11,
+  12,
+  13,
+  14,
+  15,
+  16,
+  17,
+  18,
+  19 ]
+> range.range(0, 20, 2);
+[ 0,
+  2,
+  4,
+  6,
+  8,
+  10,
+  12,
+  14,
+  16,
+  18 ]
 ```
 
 # HOMEPAGE
@@ -46,12 +48,6 @@ https://github.com/mcandre/node-range
 # NPM
 
 https://www.npmjs.com/package/range
-
-# INSTALL
-
-```
-$ npm install range
-```
 
 # LICENSE
 
@@ -93,7 +89,7 @@ Feature: Run example tests
 Keep the code tidy:
 
 ```
-$ npm run-script lint
+$ grunt lint
 ```
 
 ## Spell Check
