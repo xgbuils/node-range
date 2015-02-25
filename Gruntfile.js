@@ -3,7 +3,7 @@ module.exports = function(grunt) {
     exec: {
       test: "npm test",
 
-      jshint: "jshint .",
+      jshint: "node_modules/jshint/bin/jshint .",
       lili: "bundle exec lili ."
     }
   });
