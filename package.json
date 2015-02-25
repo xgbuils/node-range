@@ -8,15 +8,16 @@
   },
   "author": "Andrew Pennebaker <andrew.pennebaker@gmail.com> (http://www.yellosoft.us/)",
   "scripts": {
-    "test": "node test.js"
+    "exec": "exec",
+    "test": "mocha",
+    "lint": "jshint ."
   },
   "engines": {
     "node": ">=0.8"
   },
   "main": "lib/range.js",
-  "scripts": {
-    "test": "grunt",
-    "lint": "jshint ."
+  "dependencies": {
+    "mocha": "1.21.4"
   },
   "devDependencies": {
     "grunt": "~0.4.2",

@@ -61,7 +61,6 @@ FreeBSD
 
 * [Ruby](https://www.ruby-lang.org/) 2+
 * [Bundler](http://bundler.io/)
-* [Cucumber](http://cukes.info/)
 * [Guard](http://guardgem.org/)
 * [aspelllint](https://github.com/mcandre/aspelllint)
 
@@ -72,16 +71,19 @@ FreeBSD
 Ensure the example script works as expected:
 
 ```
-$ cucumber 
-Feature: Run example tests
+$ npm test
 
-  Scenario: Running example tests            # features/run_example_tests.feature:3
-    Given the program has finished           # features/step_definitions/steps.rb:1
-    Then the output is correct for each test # features/step_definitions/steps.rb:5
+> range@0.0.2 test /Users/apennebaker/Desktop/src/node-range
+> mocha
 
-1 scenario (1 passed)
-2 steps (2 passed)
-0m2.454s
+
+
+  range
+    range
+      ✓ should behave like Python range() 
+
+
+  1 passing (5ms)
 ```
 
 ## Lint
