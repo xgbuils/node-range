@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+"use strict";
+
 var
 http = require("http"),
 range = require("./lib/range").range;
@@ -18,7 +20,7 @@ function fizzbuzz() {
       return "Buzz";
     }
     else {
-      return "" + n;
+      return String(n);
     }
   });
 }

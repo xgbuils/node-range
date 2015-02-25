@@ -9,13 +9,12 @@
   "author": "Andrew Pennebaker <andrew.pennebaker@gmail.com> (http://www.yellosoft.us/)",
   "scripts": {
     "exec": "exec",
-    "test": "mocha",
-    "lint": "jshint ."
+    "test": "mocha"
   },
   "engines": {
     "node": ">=0.8"
   },
-  "main": "lib/range.js",
+  "main": "lib/range",
   "dependencies": {
     "mocha": "1.21.4"
   },
@@ -24,6 +23,7 @@
     "grunt-cli": "~0.1.13",
     "grunt-exec": "~0.4.5",
     "cmp":"0.0.2",
-    "jshint": ">=2.1.2"
+    "jshint": ">=2.1.2",
+    "jslint": ">= 0.8.1"
   }
 }
