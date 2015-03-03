@@ -80,7 +80,7 @@ $ npm test
 
   range
     range
-      ✓ should behave like Python range() 
+      ✓ should behave like Python range()
 
 
   1 passing (5ms)
