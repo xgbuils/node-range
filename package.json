@@ -21,6 +21,7 @@
     "eslint": ">= 0.15.0",
     "grunt": "~0.4.2",
     "grunt-cli": "~0.1.13",
+    "grunt-contrib-uglify": "^0.9.1",
     "grunt-exec": "~0.4.5",
     "jshint": ">=2.1.2",
     "jslint": ">= 0.8.1",
