@@ -1,7 +1,7 @@
 dist
 examples
 fizzbuzz.js
-Gemfile
+Gemfile*
 Gruntfile.js
 Guardfile-lint
 hooks
